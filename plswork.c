@@ -531,19 +531,23 @@ void semSignal(struct mutex *m, struct data processID) {
             switch (highestpriority) {
                 case 1:
                     enqueue(&q1, process);
-                    setState(process,"Running");
+                    setState(process,"Ready");
+                    printf("process with ID %s state is now Ready\n",process.value);
                     break;
                 case 2:
                     enqueue(&q2, process);
-                    setState(process,"Running");
+                    setState(process,"Ready");
+                    printf("process with ID %s state is now Ready\n",process.value);
                     break;
                 case 3:
                     enqueue(&q3, process);
-                    setState(process,"Running");
+                    setState(process,"Ready");
+                    printf("process with ID %s state is now Ready\n",process.value);
                     break;
                 case 4:
                     enqueue(&q4, process);
-                    setState(process,"Running");
+                    setState(process,"Ready");
+                    printf("process with ID %s state is now Ready\n",process.value);
                     break;
             }
         }
